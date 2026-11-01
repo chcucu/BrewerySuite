@@ -1,0 +1,43 @@
+language: zh_CN
+default-mode: detailed
+
+refresh-ticks: 20
+
+nearby:
+  default: false
+  radius: 16.0
+
+barrel:
+  enabled: true
+  show-empty: true
+  max-bottle-lines: 6
+  offset:
+    x: 0.5
+    y: 1.2
+    z: 0.5
+
+cauldron:
+  enabled: true
+  max-ingredient-lines: 4
+  offset:
+    x: 0.5
+    y: 0.8
+    z: 0.5
+
+# 0 表示自动读取 BreweryX/config.yml 的 agingYearDuration
+aging:
+  minutes-per-year: 0
+
+book:
+  enabled: true
+  filler: GRAY_STAINED_GLASS_PANE
+
+market:
+  enabled: true
+  daily-limit: 10000
+  money-format: '#,##0.##'
+  shulker-selling: true
+  history:
+    max-entries: 50
+  prices:
+    default: 10.0

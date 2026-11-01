@@ -1,0 +1,25 @@
+name: BrewerySuite
+version: '1.0'
+main: me.admin.brewery.BrewerySuitePlugin
+api-version: '1.20'
+author: Admin
+description: BreweryX 增强套件：酒桶/炼药锅全息、配方书与酒市。
+depend:
+  - BreweryX
+  - Vault
+softdepend:
+  - DecentHolograms
+  - PlaceholderAPI
+commands:
+  brewsuite:
+    description: BrewerySuite 主命令
+    usage: /brewsuite help
+    aliases:
+      - bsuite
+permissions:
+  brewsuite.use:
+    description: 允许使用 BrewerySuite 的玩家功能
+    default: true
+  brewsuite.admin:
+    description: 允许重载 BrewerySuite
+    default: op
